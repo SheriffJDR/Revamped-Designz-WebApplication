@@ -1,0 +1,87 @@
+.carousel{
+    height: max-content;
+    width:100%;
+    margin: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.arrivals_carousel{
+    /* position: relative; */
+    height: 100%;
+    width:100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.drag{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.navigation{
+    height: 20%;
+    width: 100%;
+}
+
+.carousel_arrow{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    width: 100%;
+    margin: 1rem auto 0rem auto;
+}
+
+.left_arrow{
+    cursor: pointer;
+    fill:white;
+}
+.right_arrow{
+    cursor: pointer;
+    fill:white;
+}
+.left_arrow:hover{
+    cursor: pointer;
+    fill: var(--brand-blue);
+}
+.right_arrow:hover{
+    cursor: pointer;
+    fill: var(--brand-blue);
+}
+.null_arrow{
+    /* stroke:rgba(3, 1, 1, 0.13); */
+    fill:rgba(171, 169, 169, 0.211);
+    cursor: default;
+    pointer-events: none;
+}
+.null_arrow:hover{
+    stroke:rgba(3, 1, 1, 0.13);
+    fill:rgba(3, 1, 1, 0.13);
+    cursor: default;
+}
+
+
+@media only screen and (max-width:500px){
+    .arrivals_carousel{
+        height: 100%;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .carousel_arrow > svg{
+        width: 23px;
+        height: 23px;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .carousel_arrow{
+        margin: 4.5rem auto 0rem auto;
+    }
+}

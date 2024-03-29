@@ -1,0 +1,120 @@
+.splashContentContainer{
+    height: 70vh;
+    width: 70vw;
+    margin:auto;
+    z-index: 10000;
+  }
+
+.splashContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}
+
+.splashContent > img {
+    width:238px;
+    height: 340px;
+    position: relative;
+    top:5rem;
+    font-size: 13px;
+    opacity: 0%;
+    animation: 1s ease-in forwards fade-in;
+}
+.splashContent > p {
+    text-align: center;
+    opacity: 0%;
+    font-size: 13px;
+    animation: 2s ease-out 1s forwards slide-fade-in;
+}
+.splashContent > p > span {
+    color : var(--brand-blue);
+}
+
+@keyframes fade-in{
+    0%{
+        bottom:5rem;
+        opacity: 0%;
+    }
+    100%{
+        bottom: 0rem;
+        opacity: 100%;
+    }
+}
+@keyframes slide-fade-in{
+    0%{
+        position:relative;
+        top:5rem;
+        opacity: 0%;
+    }
+    100%{
+        top: 0rem;
+        opacity: 100%;
+    }
+}
+.splashCopywrite{
+    height: 30px;
+    width: 50vw;
+    position: relative;
+    top:35vh;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+} 
+
+@media only screen and (max-height: 680px){
+    .splashContent{
+        position: relative;
+        top: 7rem;
+    }
+    .splashCopywrite{
+        position: relative;
+        top:45vh;
+    }
+    .splashCopywrite > h2{
+        font-size: 14px;
+    }
+    .splashContent > img {
+    width:119px;
+    height: 170px;
+}
+
+    .splashContent > p {
+        position: relative;
+        top:2rem;
+        text-align: center;
+        opacity: 0%;
+        font-size: 10px;
+
+    }
+    @keyframes slide-fade-in{
+    0%{
+        position:relative;
+        top:5rem;
+        opacity: 0%;
+    }
+    100%{
+        top: 3rem;
+        opacity: 100%;
+    }
+}
+}
+@media only screen and (min-height: 820px){
+    .splashContent{
+        position: relative;
+        top: 4rem;
+    }
+
+}
+@media only screen and (min-height: 820px){
+    .splashContent{
+        position: relative;
+        top: 8rem;
+    }
+    
+    .splashCopywrite{
+        position: relative;
+        top:40vh;
+    } 
+}

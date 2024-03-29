@@ -1,0 +1,37 @@
+.sliderContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:1.5rem auto;
+    height:20px;
+    width: 100%;
+}
+.scrollBorder{
+    position: relative;
+    height: 8px;
+    width:100px;
+    padding: 0rem;
+    border: 2px solid var(--brand-blue);
+    border-radius: 10px;
+    background-color: transparent;
+}
+.scrollBar{
+    content:'';
+    position: absolute;
+    height: 10px;
+    width:25px;
+    border-radius: 10px;
+    top:0rem;
+    left:-2px;
+    background-color: var(--brand-blue);
+}
+.scrollBar:hover{
+    cursor: pointer;
+    background-color: #00bee8b8;
+}
+
+@media only screen and (min-width:540px){
+    .sliderContainer{
+        display: none;
+    }
+}

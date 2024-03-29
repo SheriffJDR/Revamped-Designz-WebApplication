@@ -1,0 +1,148 @@
+.aboutUsContainer{
+    height: 100%;
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.aboutUsContent{
+    height: 50%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.aboutUsHr{
+    width: calc(100%-25px);
+    height: 0px;
+    border:1px solid #5B5757;
+    display: none;
+    position: relative;
+    right:14px;
+}
+
+.history{
+    width:100%;
+    height:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.history > h1{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23.172px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding:0 25px;
+    display: none;
+}
+
+.history > p{
+    color: #bebebe;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23.924px; /*  137.023%*/
+    padding:0px 25px 0 25px;
+}
+.missionStatement{
+    width:100%;
+    height:40%;
+}
+
+.missionStatement > h1{
+    color: var(--brand-blue);
+    font-family: 'Roboto',sans-serif;
+    font-size: 23.172px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding:0 25px;
+}
+.missionStatement > p{
+    color: #bebebe;
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23.924px; /*  137.023%*/
+    padding:0 25px;
+}
+
+.workDescription{
+    width:95%;
+    height:40%;
+}
+.workDescription > h1{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23.172px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding:0 25px;
+}
+.workDescription > p{
+    color: #bebebe;
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23.924px; /*  137.023%*/
+    padding:0 25px;
+}
+
+@media only screen and (min-width : 620px){
+    .history > h1{
+        display: block;
+        text-align: center;
+    }
+    .history > p{
+        text-align: left;
+    }
+}
+@media only screen and (min-width : 1200px){
+    .aboutUsContainer{
+        height: 100%;
+        width: 100%;
+        max-width: 1920px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .aboutUsContent{
+        width:50%;
+        position:relative;
+        top:9rem;
+    }
+
+    .aboutUsHr{
+        display: block;
+        padding-left:25px;
+        width: 90%;
+    }
+    
+    .history > p{
+        font-size: 16px;
+        line-height: 136.523%;
+    }
+
+    .workDescription > p{
+        font-size :16px;
+        line-height: 136.523%;
+    }
+
+    .missionStatement > p{
+        font-size: 16px;
+        line-height: 136.523%;
+    }
+}

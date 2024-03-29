@@ -1,0 +1,25 @@
+.moveToTopBtn{
+    position:fixed;
+    right:19px;
+    bottom: 2rem;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: var(--brand-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 100;
+}
+
+.moveToTopArrow{
+    position: relative;
+    top:9px;
+    left:9px;
+}
+@media only screen and (max-width: 500px){
+    .moveToTopBtn{
+        display: block;
+    }
+} 

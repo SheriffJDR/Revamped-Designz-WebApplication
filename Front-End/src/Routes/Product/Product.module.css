@@ -1,0 +1,120 @@
+.content{
+    height: max-content;
+    width:100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.container{
+    height:max-content;
+    width:95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.gallery{
+    height:max-content;
+    width:95%;
+    margin: 0 auto;
+}
+
+.productInfo{
+    height: max-content;
+    width:95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin:0 auto;
+}
+
+.productTitle{
+    height: max-content;
+    width:100%;
+    margin:0 auto;
+}
+.productTitle > hr{
+    width: 100%;
+    height: 2px;
+    background-color: rgba(95, 91, 91, 0.48);
+    border: none;
+}
+.productTitle > h1{
+    color: #FFF;
+    text-align: left;
+    font-family: 'Roboto',sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin:1.5rem 0rem 0rem 0rem;
+}
+.productTitle > h2{
+    color: #7A7A7A;
+    text-align: left;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin:1rem 0rem 2rem 0rem;
+}
+.productDescription{
+    height: max-content;
+    width:100%;
+    margin:0 auto 1rem auto;
+}
+.productDescription  > h1{
+    color: var(--brand-blue);
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.productDescription  > p{
+    color: #FFF;
+    font-family: 'Roboto',sans-serif;
+    text-align: justify;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 136.523%;
+}
+.productSpecifications{
+    height: max-content;
+    width: 100%;
+    margin:0 auto;
+}
+.productSpecifications > h1{
+    color: var(--brand-blue);
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+@media only screen and (min-width:1400px) {
+    .container{
+        display:flex;
+        flex-direction: row;
+        margin-top:107px;
+    }
+    .copywrite{
+        display:none ;
+    }
+    .productTitle > h2{
+        color: #7A7A7A;
+        text-align: left;
+        font-family: 'Roboto',sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin:1rem 0rem 2rem 0rem;
+    }
+}

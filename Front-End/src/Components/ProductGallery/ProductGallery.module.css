@@ -1,0 +1,74 @@
+:root{
+    --image-gallery-spacing: 10px;
+    --image-gallery-size:64px;
+    --image-gallery-border:1px;
+}
+.container{
+    height: 75vh;
+    width:95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+.currentImage{
+    position: relative;
+    height: 80%;
+    width:100%
+}
+.arrowNavigation{
+    position: absolute;
+    width:100%;
+    max-width:600px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:0;
+    transform: translateY(300%);
+    z-index: 1;
+}
+.arrowNavigation > svg:hover{
+    cursor: pointer;
+}
+.imageSet{
+    height: 11vh;
+    width:calc((3 * var(--image-gallery-size)) + (3 * var(--image-gallery-border)) + (var(--image-gallery-spacing) * 3));
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.otherImage{
+    min-width: var(--image-gallery-size);
+    min-height: var(--image-gallery-size);
+    z-index: 2;
+}
+.otherImage:hover{
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width:1400px) {
+    .currentImageContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 521px;
+        height: 685.848px;
+        border-radius: 21px;
+        background: rgba(78, 78, 78, 0.13);
+        box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .arrowNavigation{
+        transform: translateY(-100%);
+    }
+}

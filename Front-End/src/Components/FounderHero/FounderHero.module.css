@@ -1,0 +1,102 @@
+.foundersHeroContainer{
+    height: 75vh;
+    width:100%;
+    max-width: 1920px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin:0 auto
+}
+
+.foundersHeading{
+    margin: 2rem auto 1rem auto;
+    height: 8%;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.foundersHeading > h1{
+    margin:0;
+    color: #FFF;
+    font-family: 'Roboto',sans-serif;
+    font-size: 23.172px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding:0 25px;
+}
+
+.foundersPortrait{
+    width: 80%;
+    height:80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin:0;
+}
+
+.portrait{
+    margin:0;
+}
+
+.socials{
+    height:80px;
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.founderTitle{
+    height:10%;
+    width:95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.founderTitle > h1{
+    margin:0;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23.172px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.founderTitle > h3{
+    color: var(--brand-blue);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding:0
+}
+
+@media only screen and (min-width : 1200px){
+    
+    .foundersHeroContainer{
+        width:50%;
+    }
+    
+    .foundersHeading > h1{
+        color: var(--brand-blue);
+        padding-left: 4rem;
+    }
+    .foundersPortrait{
+        width: 357px;
+    }
+    .socials{
+        width: 357px;
+    }
+    .founderTitle{
+        width: 357px;
+    }
+}

@@ -1,0 +1,103 @@
+.menuContentContainer{
+    position: absolute;
+    height: 100vh;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    z-index: 10000;
+}
+
+.menuTop{
+    margin:1rem 2rem 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+} 
+.menuHr{
+    width:95%;
+    background-color: var(--brand-blue);
+    border: 1px solid var(--brand-blue);
+}
+.closeIcon{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.menuTitle > h1{
+    margin-bottom:1.5rem;
+    color: #00BFE8;
+    font-family: 'Roboto',sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.menuTitle > h2{
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.menuMiddle{
+    margin:2rem 2rem 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.middleMenuTitle > h2{
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.menuItems{
+    width: 100%;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style: none;
+}
+.menuMiddle > .menuItems{
+    padding: 0rem;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: repeat(2,50%);
+}
+.menuTop > .menuItems{
+    padding: 0rem;
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: repeat(2,50%);
+}
+.menuLinks{
+    color:var(--main-text-color);
+}
+.menuItem {
+    padding:0.5rem 0rem;
+}
+.menuItem:hover{
+    cursor: pointer;
+    color: var(--brand-blue);
+    transition: 250ms ease-in;
+}
+.menuBottom{
+    position: relative;
+    top:4rem;
+    margin:2rem 2rem 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
