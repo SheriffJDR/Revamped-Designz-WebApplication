@@ -1,7 +1,9 @@
 import React, {useRef} from "react";
 import ProductCard from '../ProductCard';
 import style from './Carousel.module.css';
-import Slider from "../Slider";
+import SwipeToScroll from '../SwipeToSroll';
+import SwipeToSroll from "../SwipeToSroll";
+//import Slider from "../Slider";
 
 export default function Carousel({carouselItems,arrowNavigation,sliderNavigation,onSale}){
   
@@ -215,9 +217,11 @@ export default function Carousel({carouselItems,arrowNavigation,sliderNavigation
             </svg>
           </div>
         ) : null}
-        {sliderNavigation && (
-          <Slider ref = {carousel}/>
-        )}
+        {sliderNavigation && 
+          // <Slider ref = {carousel}/>
+          <SwipeToSroll/>
+        }
+        
       </div>
     </div>
   );

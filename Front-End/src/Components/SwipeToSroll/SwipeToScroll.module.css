@@ -1,0 +1,36 @@
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:1.5rem auto;
+    height:20px;
+    width: 100%;
+}
+
+.swipeStyle{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    text-wrap: nowrap;
+    padding: 0px 10px;
+    opacity: 30%;
+    text-align: center;
+}
+
+.left_arrow{
+    cursor: none;
+    opacity: 30%;
+    transform: scale(70%);
+}
+.right_arrow{
+    cursor: none;
+    opacity: 30%;
+    transform: scale(70%);
+}
+
+@media only screen and (min-width:540px){
+    .container{
+        display: none;
+    }
+}

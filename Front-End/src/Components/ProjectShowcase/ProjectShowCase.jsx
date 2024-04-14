@@ -1,7 +1,8 @@
 import React, {useRef} from 'react'
 import { Link } from 'react-router-dom';
 import styles from './ProjectShowCase.module.css'
-import Slider from '../Slider';
+import SwipeToScroll from '../SwipeToSroll';
+// import Slider from '../Slider';
 
 function ProjectShowCase({projects}) {
 
@@ -83,7 +84,8 @@ function ProjectShowCase({projects}) {
         })}
       </div>
       <div className={styles.sliderContainer}>
-      <Slider ref = {container}/>
+      {/* {<Slider ref = {container}/>} */}
+      <SwipeToScroll/>
       </div>
     </section>
   );
