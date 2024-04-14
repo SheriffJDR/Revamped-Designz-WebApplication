@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 50vh;
+  height: max-content;
   width:100%;
   margin:0.5rem auto 0.5rem auto;
 }
@@ -27,8 +27,7 @@
 }
 @media only screen and (min-width:1200px){
   .newArrivalSection{
-    height: 50vh;
     width:100%;
-    margin:0 auto 12rem auto;
+    margin:0 auto var(--home-section-spacing) auto;
   }
 }

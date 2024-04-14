@@ -9,6 +9,7 @@
   --scroll-bar-thumb: #202020;
   --scroll-bar-thumb-hover: #1b1b1b;
   --scroll-bar-track: transparent;
+  --home-section-spacing: 6rem;
 }
 
 html{

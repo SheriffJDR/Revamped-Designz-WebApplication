@@ -2,7 +2,7 @@
     height: max-content;
     width:100%;
     /* max-width: 1920px; */
-    margin : 3rem auto;
+    margin : 0 auto var(--home-section-spacing) auto;
     display: flex;
     flex-direction: column;
 }
@@ -54,7 +54,7 @@
 .sliderContainer{
     height: 10%;
     width:100%;
-    margin:1.5rem auto 0rem auto;
+    margin:0rem auto 0rem auto;
 }
 .projectInfo{
     width: 100%;
